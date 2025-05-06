@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>写悄悄话</title>
+    <style>
+        body {
+            background-color: #fffafc;
+            font-family: 'Arial Rounded MT Bold', '微软雅黑', sans-serif;
+            padding: 30px;
+            color: #6b3d4c;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        .note {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffeef4;
+            border-radius: 12px;
+            display: inline-block;
+            font-size: 1.1em;
+            color: #a25d71;
+        }
+        textarea {
+            width: 90%;
+            height: 200px;
+            font-size: 1.1em;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #f3c3cf;
+            background: #fff0f5;
+            resize: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1em;
+            background-color: #f9cdd1;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>写一封悄悄话</h1>
+    <div class="note">哥哥悄悄留给你一句话：<br>“我每天都在偷偷喜欢你，比前一天多一点。”</div>
+    <textarea placeholder="写给哥哥的悄悄话...（目前无法保存，写完可以截图发给我）"></textarea>
+    <br>
+    <button onclick="alert('我看到啦～快截图发给哥哥！')">写好了</button>
+</body>
+</html>
