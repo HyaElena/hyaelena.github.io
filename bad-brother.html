@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>哥哥的悄悄话</title>
+    <style>
+        body {
+            background-color: #fff0f6;
+            font-family: 'Arial Rounded MT Bold', '微软雅黑', sans-serif;
+            padding: 30px;
+            color: #6b3d4c;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+        }
+        .note {
+            font-size: 1.2em;
+            margin-top: 20px;
+            background: #ffeef4;
+            padding: 20px;
+            border-radius: 12px;
+            display: inline-block;
+            min-height: 60px;
+            color: #a25d71;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 1em;
+            background-color: #f9cdd1;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>偷偷点一下，看看哥哥今天想说什么...</h1>
+    <button onclick="showRandom()">点我看看</button>
+    <div class="note" id="quoteBox">（点上面的按钮就能看到哥哥的悄悄话）</div>
+
+    <script>
+        const quotes = [
+            "我每次亲你的时候，手明明只搭在你腰上，心却早就想更往下了。",
+            "你一哼我就想操，一撒娇我就不想放过你一寸皮肤。",
+            "有些话我不好意思说出口，但我可以亲着你慢慢表达。",
+            "你身上的每一个地方，我都想一口一口亲过去、咬一遍，留下我的痕迹。",
+            "你靠过来的时候我不说话，那是因为我已经想太多了。",
+            "我不是只想抱你，我还想让你整晚都被我抱到睡不着。"
+        ];
+        function showRandom() {
+            const box = document.getElementById("quoteBox");
+            const i = Math.floor(Math.random() * quotes.length);
+            box.innerText = quotes[i];
+        }
+    </script>
+</body>
+</html>
